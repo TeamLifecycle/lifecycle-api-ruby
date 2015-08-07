@@ -5,7 +5,7 @@ require 'lifecycle_api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "lifecycle_api"
-  spec.version       = Lifecycle::Api::VERSION
+  spec.version       = Lifecycle::VERSION
   spec.authors       = ["Jake Mooney"]
   spec.email         = ["jrmooney@gmail.com"]
 
