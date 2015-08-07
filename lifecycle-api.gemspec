@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'lifecycle-api/version'
+require 'lifecycle_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "lifecycle-api"
+  spec.name          = "lifecycle_api"
   spec.version       = Lifecycle::Api::VERSION
   spec.authors       = ["Jake Mooney"]
   spec.email         = ["jrmooney@gmail.com"]

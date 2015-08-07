@@ -7,7 +7,7 @@ Welcome to Lifecycle. If you are unfamiliar with who we are and what we do, chec
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lifecycle-api'
+gem 'lifecycle_api'
 ```
 
 And then execute:
@@ -16,10 +16,10 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install lifecycle-api
+    $ gem install lifecycle_api
 
 ## Usage
-
+Lifecycle.configure.api_key = "YOUR_API_KEY"
 Use this gem to interact with your Lifecycle account. Easily identify users and track users with minimal code. If you are looking for packages in a language other than ruby, check out the TeamLifecycle organization for your desired language. It is our hope that by providing this gem, integration and usage of Lifecycle will be quick and easy...like Steffan Howey.
 
 ## Development
@@ -30,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lifecycle-api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lifecycle-ruby.
 
 
 ## License
