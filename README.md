@@ -38,4 +38,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+>>>>>>> 4b6faea53cd8f3ac8382bdc2fd4793b9837f59cc
