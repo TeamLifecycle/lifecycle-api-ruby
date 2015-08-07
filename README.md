@@ -19,7 +19,14 @@ Or install it yourself as:
     $ gem install lifecycle_api
 
 ## Usage
-Lifecycle.configure.api_key = "YOUR_API_KEY"
+To use, simply create an instance of the client and identify and track away!
+
+```ruby
+require 'lifecycle_api'
+
+client = Lifecycle::Client.new :api_key => 'YOUR_LIFECYCLE_API_KEY'
+client.send 'from_email', 'to_email', 'subject_line', 'message_body'
+```
 Use this gem to interact with your Lifecycle account. Easily identify users and track users with minimal code. If you are looking for packages in a language other than ruby, check out the TeamLifecycle organization for your desired language. It is our hope that by providing this gem, integration and usage of Lifecycle will be quick and easy...like Steffan Howey.
 
 ## Development
