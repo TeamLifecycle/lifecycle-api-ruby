@@ -25,7 +25,15 @@ To use, simply create an instance of the client and identify and track away!
 require 'lifecycle_api'
 
 lifecycle = Lifecycle::Client.new :api_key => 'YOUR_LIFECYCLE_API_KEY'
+```
+
+TO IDENTIFY:
+```ruby
 lifecycle.identify @params #(see example of @params)
+```
+
+TO TRACK:
+```ruby
 lifecycle.track 'event_id', 'unique_id'
 ```
 Use this gem to interact with your Lifecycle account. Easily identify users and track users with minimal code. If you are looking for packages in a language other than ruby, check out the TeamLifecycle organization for your desired language. It is our hope that by providing this gem, integration and usage of Lifecycle will be quick and easy...like Steffan Howey.
