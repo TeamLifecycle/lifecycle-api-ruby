@@ -26,32 +26,12 @@ describe Lifecycle::Client do
 
     describe 'with class configuration' do
       before do
-        @config = {
-          :api_key    => 'ak',
-          :format     => 'of',
-          :endpoint   => 'ep',
-          :user_agent => 'ua',
-          :method     => 'hm',
-        }
+        @api_key = 'ak'
       end
 
       it 'should override module configuration' do
-        api = Lifecycle::Client.new(@config)
-        @keys.each do |key|
-          expect(api.send(key)).to eql(@config[key])
-        end
-      end
-
-      it 'should override module configuration after' do
-        api = Lifecycle::Client.new
-
-        @config.each do |key, value|
-          api.send("#{key}=", value)
-        end
-
-        @keys.each do |key|
-          expect(api.send("#{key}")).to eql(@config[key])
-        end
+        api = Lifecycle::Client.new(@api_key)
+        expect(api.api_key).to eql(@api_key)
       end
 
     end

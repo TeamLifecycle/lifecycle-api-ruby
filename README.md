@@ -24,7 +24,7 @@ To use, simply create an instance of the client and identify and track away!
 ```ruby
 require 'lifecycle_api'
 
-lifecycle = Lifecycle::Client.new :api_key => 'YOUR_LIFECYCLE_API_KEY'
+lifecycle = Lifecycle::Client.new 'YOUR_LIFECYCLE_API_KEY'
 ```
 
 TO IDENTIFY:

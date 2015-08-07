@@ -3,10 +3,10 @@ module Lifecycle
   class Client
      attr_accessor *Configuration::VALID_CONFIG_KEYS
 
-    def initialize(options={})
+    def initialize(api_key = :api_key)
       # Merge the config values from the module and those passed
       # to the client.
-      merged_options = Lifecycle.options.merge(options)
+      merged_options = Lifecycle.options.merge(:api_key => api_key)
 
       # Copy the merged values to this client and ignore those
       # not part of our configuration
