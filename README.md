@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/TeamLifecycle/lifecycle-ruby.svg?branch=master)](https://travis-ci.org/TeamLifecycle/lifecycle-ruby)
 # Lifecycle-Ruby
 
-Welcome to lifecycle. If you are unfamiliar with who we are and what we do, check us out at [lifecycle.io](https://lifecycle.io).
+Welcome to Lifecycle. If you are unfamiliar with who we are and what we do, check us out at [lifecycle.io](https://lifecycle.io).
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Use this gem to interact with your lifecycle account. Easily identify users and track users with minimal code. If you are looking for packages in a language other than ruby, check out the TeamLifecycle organization for your desired language. It is our hope that by providing this gem, integration and usage of LifeCycle will be quick and easy...like Steffan Howey.
+Use this gem to interact with your Lifecycle account. Easily identify users and track users with minimal code. If you are looking for packages in a language other than ruby, check out the TeamLifecycle organization for your desired language. It is our hope that by providing this gem, integration and usage of Lifecycle will be quick and easy...like Steffan Howey.
 
 ## Development
 
