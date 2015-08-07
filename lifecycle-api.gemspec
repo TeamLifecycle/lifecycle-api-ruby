@@ -2,16 +2,17 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'lifecycle/api/version'
+require 'unirest'
 
 Gem::Specification.new do |spec|
   spec.name          = "lifecycle-api"
   spec.version       = Lifecycle::Api::VERSION
   spec.authors       = ["Jake Mooney"]
-  spec.email         = ["jmooney@fandm.edu"]
+  spec.email         = ["jrmooney@gmail.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "lifecycle.io"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
