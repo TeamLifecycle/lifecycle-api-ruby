@@ -1,2 +1,2 @@
-READ THIS
+READ THIS AND THIS
 # lifecycle-ruby
