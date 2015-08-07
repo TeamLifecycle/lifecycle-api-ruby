@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "coveralls"
 
-  spec.add_production_dependency "coveralls"
+  spec.add_dependency "unirest"
 
 
 end
