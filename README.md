@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/TeamLifecycle/lifecycle-ruby.svg?branch=master)](https://travis-ci.org/TeamLifecycle/lifecycle-ruby)
+[![Build Status](https://travis-ci.org/TeamLifecycle/lifecycle-ruby.svg?branch=master)](https://travis-ci.org/TeamLifecycle/lifecycle-ruby) [![Coverage Status](https://coveralls.io/repos/TeamLifecycle/lifecycle-ruby/badge.svg?branch=master&service=github)](https://coveralls.io/github/TeamLifecycle/lifecycle-ruby?branch=master)
 # Lifecycle-Ruby
 
 Welcome to Lifecycle. If you are unfamiliar with who we are and what we do, check us out at [lifecycle.io](https://lifecycle.io).
