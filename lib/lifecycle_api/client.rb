@@ -1,20 +1,17 @@
-module Lifecycle
-
-  class Client
-     attr_accessor *Configuration::VALID_CONFIG_KEYS
-
-    def initialize(api_key = :api_key)
-      # Merge the config values from the module and those passed
-      # to the client.
-      merged_options = Lifecycle.options.merge(:api_key => api_key)
-
-      # Copy the merged values to this client and ignore those
-      # not part of our configuration
-      Configuration::VALID_CONFIG_KEYS.each do |key|
-        send("#{key}=", merged_options[key])
-      end
-    end
-
-  end # Client
-
-end
+# module Lifecycle
+#   class Client
+#     attr_accessor *Configuration::VALID_CONFIG_KEYS
+#
+#     def initialize(api_key = :api_key)
+#       # Merge the config values from the module and those passed
+#       # to the client.
+#       merged_options = Lifecycle.options.merge(:api_key => api_key)
+#
+#       # Copy the merged values to this client and ignore those
+#       # not part of our configuration
+#       Configuration::VALID_CONFIG_KEYS.each do |key|
+#         send("#{key}=", merged_options[key])
+#       end
+#     end
+#   end
+# end

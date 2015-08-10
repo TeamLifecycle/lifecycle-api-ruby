@@ -4,7 +4,8 @@ module Lifecycle
     VALID_OPTIONS_KEYS    = [:api_key, :format].freeze
     VALID_CONFIG_KEYS     = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
 
-    DEFAULT_ENDPOINT    = 'http://api-test.lifecycle.io/v1'
+    # DEFAULT_ENDPOINT    = 'http://api-test.lifecycle.io/v1'
+    DEFAULT_ENDPOINT    = 'http://localhost:3400'
     DEFAULT_METHOD      = :post
     DEFAULT_USER_AGENT  = "Lifecycle API Ruby Gem #{Lifecycle::VERSION}".freeze
 
