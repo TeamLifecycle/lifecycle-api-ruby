@@ -29,7 +29,7 @@ lifecycle = Lifecycle::Client.new 'YOUR_LIFECYCLE_API_KEY'
 
 TO IDENTIFY:
 ```ruby
-lifecycle.identify params #(see example of @params)
+lifecycle.identify params #(see example of params)
 ```
 
 TO TRACK:
