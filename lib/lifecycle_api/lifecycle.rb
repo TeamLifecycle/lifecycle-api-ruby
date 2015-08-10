@@ -20,10 +20,11 @@ module Lifecycle
       end
     end
     def track(event_id, unique_id)
+      # response = Unirest.post "http://lifecycle.io/v1/track",
       response = Unirest.post "http://localhost:3400/v1/track",
-                            headers:{ "Content-Type" => "application/json", "lifecycle-api-key" => self.api_key },
+                            headers:{ "Content-Type" => "git json", "lifecycle-api-key" => self.api_key },
                             parameters: { :event_id => event_id, :unique_id => unique_id }
-      puts "T", response.code, @params # Status code
+      puts "T", response.code # Status code
       response.headers # Response headers
       puts response.body # Parsed body
       response.raw_body # Unparsed body
