@@ -20,9 +20,7 @@ describe 'testing Lifecycle' do
           :first_name => "Nathan",
           :last_name => "Mooney",
           :email_address => "someone@getvenn.io",
-          :phone_number => "12345678913",
-          :apns_token => "",
-          :gcm_token => ""
+          :phone_number => "12345678913"
         }
         response = lifecycle.identify(@params)
         expect(response.code).to eql(200)
