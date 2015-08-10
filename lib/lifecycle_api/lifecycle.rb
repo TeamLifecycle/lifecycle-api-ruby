@@ -19,25 +19,27 @@ module Lifecycle
         send("#{key}=", merged_options[key])
       end
     end
-    def track(event_id, unique_id)
-      # response = Unirest.post "http://lifecycle.io/v1/track",
-      response = Unirest.post "http://localhost:3400/v1/track",
-                            headers:{ "Content-Type" => "git json", "lifecycle-api-key" => self.api_key },
-                            parameters: { :event_id => event_id, :unique_id => unique_id }
-      puts "T", response.code # Status code
-      response.headers # Response headers
-      puts response.body # Parsed body
-      response.raw_body # Unparsed body
-    end
     def identify(params)
       # response = Unirest.post "http://lifecycle.io/v1/identify",
       response = Unirest.post "http://localhost:3400/v1/identify",
                             headers:{ "Content-Type" => "application/json", "lifecycle-api-key" => self.api_key },
                             parameters: params
-      puts "I", response.code # Status code
+      response.code # Status code
       response.headers # Response headers
       response.body # Parsed body
       response.raw_body # Unparsed body
+      return response
       end
+    def track(event_id, unique_id)
+      # response = Unirest.post "http://lifecycle.io/v1/track",
+      response = Unirest.post "http://localhost:3400/v1/track",
+                            headers:{ "Content-Type" => "application/json", "lifecycle-api-key" => self.api_key },
+                            parameters: { :event_id => event_id, :unique_id => unique_id }
+      puts response.code # Status code
+      response.headers # Response headers
+      response.body # Parsed body
+      response.raw_body # Unparsed body
+      return response
+    end
   end
 end

@@ -24,7 +24,8 @@ describe 'testing Lifecycle' do
           :apns_token => "",
           :gcm_token => ""
         }
-        lifecycle.identify(@params)
+        response = lifecycle.identify(@params)
+        expect(response.code).to eql(200)
       end
 
     end
