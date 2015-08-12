@@ -40,12 +40,14 @@ lifecycle.track 'event_id', 'unique_id'
 
 ```ruby
 #Example of params variable to use with identify call
+#notice the .to_json at the end. The rest api will not be able
+#to parse your request without this.
 params = {:unique_id => "1234",
-          :first_name => "Nathan",
-          :last_name => "Mooney",
-          :email_address => "someone@lifecycle.io",
-          :phone_number => "12345678913"
-}
+  :first_name => "Nathan",
+  :last_name => "Mooney",
+  :email_address => "someone@getvenn.io",
+  :phone_number => "12345678913"
+}.to_json
 ```
 Use this gem to interact with your Lifecycle account. Easily identify users and track users with minimal code. If you are looking for packages in a language other than ruby, check out the TeamLifecycle organization for your desired language. It is our hope that by providing this gem, integration and usage of Lifecycle will be quick and easy.
 
