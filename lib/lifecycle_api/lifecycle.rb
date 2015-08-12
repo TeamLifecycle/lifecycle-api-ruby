@@ -1,6 +1,5 @@
 require "lifecycle_api/version"
 require "lifecycle_api/configuration"
-require "lifecycle_api/client"
 require "unirest"
 
 module Lifecycle
