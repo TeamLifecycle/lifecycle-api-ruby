@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jake Mooney"]
   spec.email         = ["jrmooney@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{The official gem for making clean and easy api calls to your lifecycle account. OFFICIAL LIFECYCLE API GEM}
+  spec.description   = %q{Check our more on details regarding installation and usage at https://github.com/TeamLifecycle/lifecycle-ruby}
   spec.homepage      = "https://www.lifecycle.io/"
   spec.license       = "MIT"
 

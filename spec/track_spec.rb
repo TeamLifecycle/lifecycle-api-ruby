@@ -13,9 +13,9 @@ describe 'testing Lifecycle' do
   end
   describe "testing track endpoint" do
     context "with default params" do
-      xit "and valid api-key" do
+      it "and valid api-key" do
         lifecycle = Lifecycle::Client.new '07fd3326118474520dc18baf'
-        response = lifecycle.track('event', '5')
+        response = lifecycle.track("event", "5")
         expect(response.code).to eql(200)
       end
     end

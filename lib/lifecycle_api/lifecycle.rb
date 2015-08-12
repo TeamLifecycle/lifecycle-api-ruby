@@ -34,8 +34,8 @@ module Lifecycle
       # response = Unirest.post "http://lifecycle.io/v1/track",
       response = Unirest.post "http://localhost:3400/v1/track",
                             headers:{ "Content-Type" => "application/json", "lifecycle-api-key" => self.api_key },
-                            parameters: { :event_id => event_id, :unique_id => unique_id }
-      puts response.code # Status code
+                            parameters: { :event_id => event_id, :unique_id => unique_id }.to_json
+      response.code # Status code
       response.headers # Response headers
       response.body # Parsed body
       response.raw_body # Unparsed body
