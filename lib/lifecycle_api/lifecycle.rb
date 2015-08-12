@@ -21,7 +21,7 @@ module Lifecycle
     end
     def identify(params)
       # response = Unirest.post "http://lifecycle.io/v1/identify",
-      response = Unirest.post "http://localhost:3400/v1/identify",
+      response = Unirest.post "http://api.lifecycle.io/v1/identify",
                             headers:{ "Content-Type" => "application/json", "lifecycle-api-key" => self.api_key },
                             parameters: params
       response.code # Status code
@@ -32,7 +32,7 @@ module Lifecycle
       end
     def track(event_id, unique_id)
       # response = Unirest.post "http://lifecycle.io/v1/track",
-      response = Unirest.post "http://localhost:3400/v1/track",
+      response = Unirest.post "http://api.lifecycle.io/v1/track",
                             headers:{ "Content-Type" => "application/json", "lifecycle-api-key" => self.api_key },
                             parameters: { :event_id => event_id, :unique_id => unique_id }.to_json
       response.code # Status code
