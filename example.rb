@@ -1,4 +1,4 @@
-require './lib/lifecycle_api/lifecycle'
+require 'lifecycle_api/lifecycle'
 
 def example
   # initialize
@@ -12,10 +12,10 @@ def example
   }.to_json
 
   response = lifecycle.identify(params)
-  puts response.code
+  puts response.body
 
   # to track
-  response = lifecycle.track('test-event', '5')
+  response = lifecycle.track('test-event', 'test')
   puts response.code
 end
 
