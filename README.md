@@ -22,7 +22,7 @@ Or install it yourself as:
 To use, simply create an instance of the client and identify and track away!
 
 ```ruby
-require 'lifecycle_api'
+require 'lifecycle_api/lifecycle'
 
 lifecycle = Lifecycle::Client.new 'YOUR_LIFECYCLE_API_KEY'
 ```
