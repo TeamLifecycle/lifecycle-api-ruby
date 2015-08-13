@@ -32,6 +32,8 @@ module Lifecycle
     def configure
       yield self
     end
+    # implement a method that returns all the configuration values inside the Lifecycle module
+    # this seems unessasary TODO: refactor/remove this method
     def options
       Hash[ * VALID_CONFIG_KEYS.map { |key| [key, send(key)] }.flatten ]
     end

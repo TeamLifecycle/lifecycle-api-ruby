@@ -27,7 +27,7 @@ module Lifecycle
       response.headers # Response headers
       response.body # Parsed body
       response.raw_body # Unparsed body
-      return response
+      return response #dealing with this return is not in the documentation
       end
     def track(event_id, unique_id)
       # response = Unirest.post "http://lifecycle.io/v1/track",
@@ -38,7 +38,7 @@ module Lifecycle
       response.headers # Response headers
       response.body # Parsed body
       response.raw_body # Unparsed body
-      return response
+      return response #dealing with this return is not in the documentation
     end
   end
 end
