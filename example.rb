@@ -1,8 +1,8 @@
-require 'lifecycle_api'
+require './lib/lifecycle_api/lifecycle'
 
 def example
   # initialize
-  lifecycle = Lifecycle::Client.new '07fd3326118474520dc18baf'
+  lifecycle = Lifecycle::Client.new '0ae6827cfcfce2bff25ca224'
   # to identify
   params = {:unique_id => "1234",
             :first_name => "Nathan",
@@ -11,10 +11,12 @@ def example
             :phone_number => "12345678913"
   }.to_json
 
-  lifecycle.identify params
+  response = lifecycle.identify(params)
+  puts response.code
 
   # to track
-  lifecycle.track 'event_id', 'unique_id'
+  response = lifecycle.track('test-event', '5')
+  puts response.code
 end
 
 example

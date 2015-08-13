@@ -14,8 +14,8 @@ describe 'testing Lifecycle' do
 
   describe "testing identify endpoint" do
     context "with default params" do
-      xit "and valid api-key" do
-        lifecycle = Lifecycle::Client.new '07fd3326118474520dc18baf'
+      it "and valid api-key" do
+        lifecycle = Lifecycle::Client.new '0ae6827cfcfce2bff25ca224'
         params = {:unique_id => "1234",
           :first_name => "Nathan",
           :last_name => "Mooney",
